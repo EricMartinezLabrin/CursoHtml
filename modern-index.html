@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de HTML y CSS para Principiantes | Eric Martínez</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Fuente de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Aprende HTML y CSS desde Cero | Eric Martínez</title>
+    <link rel="stylesheet" href="css/modern-styles.css">
+    <!-- Fuentes SF Pro de Apple -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -16,17 +16,21 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">Eric Martínez</a>
-                <div class="menu-toggle">
+                <button class="menu-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
                 <ul class="nav-menu">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#acerca" class="nav-link">Acerca del Curso</a></li>
                     <li><a href="#contenido" class="nav-link">Contenido</a></li>
                     <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                     <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><button id="darkModeToggle" class="theme-toggle" aria-label="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button></li>
                     <li><a href="#inscripcion" class="nav-link btn-inscribir">¡Inscríbete Ahora!</a></li>
                 </ul>
             </nav>
@@ -41,16 +45,16 @@
                 <h2 class="fade-in">Desarrolla tus propias páginas web profesionales</h2>
                 <p class="fade-in">Un curso completo para principiantes donde aprenderás a crear sitios web atractivos y funcionales sin experiencia previa.</p>
                 <div class="hero-buttons fade-in">
-                    <a href="#inscripcion" class="btn btn-primary">¡Inscríbete Ahora!</a>
-                    <a href="#contenido" class="btn btn-secondary">Ver Contenido</a>
+                    <a href="#inscripcion" class="btn btn-primary">¡Inscríbete Ahora! <i class="fas fa-arrow-right btn-icon"></i></a>
+                    <a href="#contenido" class="btn btn-outline">Ver Contenido</a>
                 </div>
             </div>
             <div class="hero-image fade-in">
                 <div class="code-block">
-                    <pre><code>&lt;div class="mi-clase"&gt;
-  &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
-  &lt;p&gt;Mi primera página web&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+                    <pre><code><span class="tag">&lt;div</span> <span class="attribute">class</span>=<span class="string">"mi-clase"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>¡Hola Mundo!<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;p&gt;</span>Mi primera página web<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
                 </div>
             </div>
         </div>
@@ -60,12 +64,14 @@
     <section id="acerca" class="about">
         <div class="container">
             <h2 class="section-title">¿De qué trata este curso?</h2>
+            <span class="section-subtitle">Diseñado especialmente para principiantes sin experiencia previa</span>
+            
             <div class="about-content">
-                <article class="about-text">
+                <div class="about-text">
                     <p>Este curso está diseñado para personas con <strong>cero experiencia</strong> en programación que desean aprender a crear páginas web desde cero.</p>
                     <p>Aprenderás paso a paso los fundamentos de HTML y CSS, los dos lenguajes esenciales para el desarrollo web front-end, a través de proyectos prácticos y ejercicios guiados.</p>
                     <p>Al final del curso, no solo comprenderás cómo funcionan las páginas web, sino que habrás creado tu propio portafolio profesional y sabrás cómo publicarlo en internet para mostrar tus nuevas habilidades al mundo.</p>
-                </article>
+                </div>
                 <div class="about-features">
                     <div class="feature">
                         <i class="fas fa-laptop-code"></i>
@@ -96,6 +102,8 @@
     <section id="contenido" class="content">
         <div class="container">
             <h2 class="section-title">¿Qué aprenderás?</h2>
+            <span class="section-subtitle">Contenido estructurado para un aprendizaje progresivo</span>
+            
             <div class="content-wrapper">
                 <div class="module">
                     <div class="module-number">01</div>
@@ -153,10 +161,12 @@
     <section id="proyectos" class="projects">
         <div class="container">
             <h2 class="section-title">Proyectos que realizarás</h2>
+            <span class="section-subtitle">Aprende haciendo: del concepto a la implementación real</span>
+            
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Landing+Page" alt="Proyecto Landing Page">
+                        <img src="https://via.placeholder.com/600x400?text=Landing+Page" alt="Proyecto Landing Page">
                     </div>
                     <div class="project-info">
                         <h3>Landing Page</h3>
@@ -165,7 +175,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Portafolio+Personal" alt="Proyecto Portafolio">
+                        <img src="https://via.placeholder.com/600x400?text=Portafolio+Personal" alt="Proyecto Portafolio">
                     </div>
                     <div class="project-info">
                         <h3>Portafolio Personal</h3>
@@ -174,7 +184,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Mini+Proyectos" alt="Mini Proyectos">
+                        <img src="https://via.placeholder.com/600x400?text=Mini+Proyectos" alt="Mini Proyectos">
                     </div>
                     <div class="project-info">
                         <h3>Mini Proyectos</h3>
@@ -212,6 +222,8 @@
     <section id="testimonios" class="testimonials">
         <div class="container">
             <h2 class="section-title">Lo que dicen nuestros alumnos</h2>
+            <span class="section-subtitle">Historias de éxito de quienes ya tomaron el curso</span>
+            
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
@@ -219,7 +231,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://via.placeholder.com/50" alt="Ana García">
+                            <img src="https://via.placeholder.com/100" alt="Ana García">
                         </div>
                         <div class="author-info">
                             <h4>Ana García</h4>
@@ -233,7 +245,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://via.placeholder.com/50" alt="Juan Pérez">
+                            <img src="https://via.placeholder.com/100" alt="Juan Pérez">
                         </div>
                         <div class="author-info">
                             <h4>Juan Pérez</h4>
@@ -247,7 +259,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://via.placeholder.com/50" alt="María Rodriguez">
+                            <img src="https://via.placeholder.com/100" alt="María Rodriguez">
                         </div>
                         <div class="author-info">
                             <h4>María Rodriguez</h4>
@@ -263,6 +275,8 @@
     <section id="inscripcion" class="enrollment">
         <div class="container">
             <h2 class="section-title">¡Inscríbete ahora!</h2>
+            <span class="section-subtitle">Elige el plan que mejor se adapte a tus necesidades</span>
+            
             <div class="enrollment-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -386,7 +400,7 @@
             <div class="cta-content">
                 <h2>¿Listo para aprender HTML y CSS?</h2>
                 <p>Da el primer paso hacia tu carrera en el desarrollo web</p>
-                <a href="#inscripcion" class="btn btn-primary">¡Comienza Ahora!</a>
+                <a href="#inscripcion" class="btn">¡Comienza Ahora! <i class="fas fa-arrow-right btn-icon"></i></a>
             </div>
         </div>
     </section>
@@ -430,10 +444,10 @@
         </div>
     </footer>
 
-    <!-- Script para menú móvil y FAQ -->
+    <!-- Script para menú móvil, FAQ y tema oscuro -->
     <script>
-        // Menú móvil
         document.addEventListener('DOMContentLoaded', function() {
+            // Menú móvil
             const menuToggle = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('.nav-menu');
             
@@ -452,13 +466,76 @@
             });
 
             // FAQ acordeón
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(question => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
                 question.addEventListener('click', function() {
-                    const faqItem = this.parentNode;
-                    faqItem.classList.toggle('active');
+                    // Cerrar todos los demás
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Alternar el actual
+                    item.classList.toggle('active');
                 });
             });
+            
+            // Tema oscuro
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            
+            // Verificar si hay preferencia guardada
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+            
+            darkModeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                
+                // Guardar preferencia en localStorage
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    localStorage.setItem('darkMode', null);
+                }
+            });
+            
+            // Efecto de scroll
+            const header = document.querySelector('.header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Resaltar enlace de navegación activo
+            function highlightNavLink() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', highlightNavLink);
+            highlightNavLink();
         });
     </script>
 </body>
