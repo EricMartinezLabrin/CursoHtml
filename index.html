@@ -3,463 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de HTML y CSS para Principiantes | Eric Martínez</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Fuente de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Aprende HTML y CSS desde Cero | Curso Completo</title>
+    <link rel="stylesheet" href="css/apple-style.css">
+    <!-- Fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- CABECERA: Contiene el logo y menú de navegación -->
     <header class="header">
         <div class="container">
+            <!-- Navegación principal -->
             <nav class="navbar">
-                <a href="#" class="logo">Eric Martínez</a>
-                <div class="menu-toggle">
+                <!-- Logo del sitio -->
+                <a href="#" class="logo">HTML & CSS <span>Academy</span></a>
+                
+                <!-- Menú hamburguesa para móviles -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-button">
                     <span class="bar"></span>
                     <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                </label>
+                
+                <!-- Enlaces de navegación -->
                 <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#acerca" class="nav-link">Acerca del Curso</a></li>
-                    <li><a href="#contenido" class="nav-link">Contenido</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
-                    <li><a href="#inscripcion" class="nav-link btn-inscribir">¡Inscríbete Ahora!</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca del Curso</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#precios">Precios</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- SECCIÓN PRINCIPAL: Presentación del curso -->
     <section id="inicio" class="hero">
         <div class="container">
+            <!-- Texto principal -->
             <div class="hero-content">
-                <h1 class="fade-in">Aprende HTML y CSS desde Cero</h1>
-                <h2 class="fade-in">Desarrolla tus propias páginas web profesionales</h2>
-                <p class="fade-in">Un curso completo para principiantes donde aprenderás a crear sitios web atractivos y funcionales sin experiencia previa.</p>
-                <div class="hero-buttons fade-in">
-                    <a href="#inscripcion" class="btn btn-primary">¡Inscríbete Ahora!</a>
-                    <a href="#contenido" class="btn btn-secondary">Ver Contenido</a>
+                <span class="etiqueta">Curso completo</span>
+                <h1>Domina el arte de <br><span class="destacado">HTML y CSS</span></h1>
+                <p>Crea sitios web profesionales sin experiencia previa. <br>Aprende diseño web moderno y responsive paso a paso.</p>
+                
+                <!-- Botones de acción -->
+                <div class="botones">
+                    <a href="#precios" class="boton boton-primario">Comenzar ahora</a>
+                    <a href="#contenido" class="boton boton-secundario">Explorar contenido</a>
                 </div>
-            </div>
-            <div class="hero-image fade-in">
-                <div class="code-block">
-                    <pre><code>&lt;div class="mi-clase"&gt;
-  &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
-  &lt;p&gt;Mi primera página web&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Acerca del Curso -->
-    <section id="acerca" class="about">
-        <div class="container">
-            <h2 class="section-title">¿De qué trata este curso?</h2>
-            <div class="about-content">
-                <article class="about-text">
-                    <p>Este curso está diseñado para personas con <strong>cero experiencia</strong> en programación que desean aprender a crear páginas web desde cero.</p>
-                    <p>Aprenderás paso a paso los fundamentos de HTML y CSS, los dos lenguajes esenciales para el desarrollo web front-end, a través de proyectos prácticos y ejercicios guiados.</p>
-                    <p>Al final del curso, no solo comprenderás cómo funcionan las páginas web, sino que habrás creado tu propio portafolio profesional y sabrás cómo publicarlo en internet para mostrar tus nuevas habilidades al mundo.</p>
-                </article>
-                <div class="about-features">
-                    <div class="feature">
+                
+                <!-- Características destacadas -->
+                <div class="caracteristicas">
+                    <div class="caracteristica">
                         <i class="fas fa-laptop-code"></i>
-                        <h3>Clases Prácticas</h3>
-                        <p>Aprende con ejercicios y proyectos reales</p>
+                        <span>+30 horas de contenido</span>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-users"></i>
-                        <h3>Comunidad</h3>
-                        <p>Acceso a grupo exclusivo de estudiantes</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-certificate"></i>
-                        <h3>Certificado</h3>
-                        <p>Recibe una constancia al finalizar</p>
-                    </div>
-                    <div class="feature">
+                    <div class="caracteristica">
                         <i class="fas fa-infinity"></i>
-                        <h3>Acceso de por vida</h3>
-                        <p>Material actualizado constantemente</p>
+                        <span>Acceso ilimitado</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="fas fa-award"></i>
+                        <span>Certificado incluido</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imagen del editor de código -->
+            <div class="hero-imagen">
+                <div class="editor-codigo">
+                    <div class="editor-cabecera">
+                        <div class="puntos">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="titulo">index.html</div>
+                    </div>
+                    <div class="editor-cuerpo">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Mi primera web&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+  &lt;p&gt;Bienvenidos a mi sitio web&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lo que Aprenderás -->
-    <section id="contenido" class="content">
+    <!-- ACERCA DEL CURSO: Información sobre el curso -->
+    <section id="acerca" class="acerca">
         <div class="container">
-            <h2 class="section-title">¿Qué aprenderás?</h2>
-            <div class="content-wrapper">
-                <div class="module">
-                    <div class="module-number">01</div>
-                    <div class="module-content">
+            <div class="encabezado-seccion">
+                <h2>Diseñado para principiantes</h2>
+                <p>Tu camino para convertirte en desarrollador web frontend comienza aquí</p>
+            </div>
+            
+            <!-- Tarjetas de características -->
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Comienza desde Cero</h3>
+                    <p>Sin conocimientos previos necesarios. Explicamos todo paso a paso.</p>
+                </div>
+                
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Aprende Haciendo</h3>
+                    <p>Incluye más de 20 ejercicios prácticos y 5 proyectos reales.</p>
+                </div>
+                
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Crea tu Portafolio</h3>
+                    <p>Al finalizar, tendrás tu propio sitio web profesional.</p>
+                </div>
+                
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Únete a nuestra comunidad para resolver dudas y compartir avances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENIDO DEL CURSO: Lo que aprenderás -->
+    <section id="contenido" class="contenido">
+        <div class="container">
+            <div class="encabezado-seccion">
+                <h2>Contenido del curso</h2>
+                <p>Un programa completo diseñado para avanzar a tu ritmo</p>
+            </div>
+            
+            <!-- Módulos del curso -->
+            <div class="modulos">
+                <div class="modulo">
+                    <div class="modulo-cabecera">
+                        <span class="etiqueta">Módulo 1</span>
                         <h3>Fundamentos de HTML</h3>
-                        <ul>
-                            <li>Estructura básica de un documento HTML</li>
-                            <li>Etiquetas semánticas y su importancia</li>
-                            <li>Imágenes, enlaces y listas</li>
-                            <li>Formularios y tablas</li>
-                        </ul>
                     </div>
+                    <ul class="modulo-lista">
+                        <li><i class="fas fa-check"></i> Estructura básica de un documento HTML</li>
+                        <li><i class="fas fa-check"></i> Etiquetas semánticas y su importancia</li>
+                        <li><i class="fas fa-check"></i> Elementos de texto y enlaces</li>
+                        <li><i class="fas fa-check"></i> Imágenes, videos y recursos multimedia</li>
+                        <li><i class="fas fa-check"></i> Formularios y validación</li>
+                    </ul>
                 </div>
-                <div class="module">
-                    <div class="module-number">02</div>
-                    <div class="module-content">
-                        <h3>CSS y Diseño Web</h3>
-                        <ul>
-                            <li>Selectores y propiedades CSS</li>
-                            <li>Modelo de caja y posicionamiento</li>
-                            <li>Diseño responsivo</li>
-                            <li>Flexbox y Grid</li>
-                        </ul>
+                
+                <div class="modulo">
+                    <div class="modulo-cabecera">
+                        <span class="etiqueta">Módulo 2</span>
+                        <h3>Estilos con CSS</h3>
                     </div>
-                </div>
-                <div class="module">
-                    <div class="module-number">03</div>
-                    <div class="module-content">
-                        <h3>Animaciones y Transiciones</h3>
-                        <ul>
-                            <li>Transiciones CSS</li>
-                            <li>Animaciones con keyframes</li>
-                            <li>Efectos interactivos</li>
-                            <li>Optimización de rendimiento</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="module-number">04</div>
-                    <div class="module-content">
-                        <h3>Publicación y SEO</h3>
-                        <ul>
-                            <li>Publicación en servidores</li>
-                            <li>Dominio y hosting</li>
-                            <li>Fundamentos de SEO</li>
-                            <li>Google Analytics básico</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2 class="section-title">Proyectos que realizarás</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Landing+Page" alt="Proyecto Landing Page">
-                    </div>
-                    <div class="project-info">
-                        <h3>Landing Page</h3>
-                        <p>Replicarás esta misma página utilizando HTML y CSS, aprendiendo todos los conceptos fundamentales del desarrollo web.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Portafolio+Personal" alt="Proyecto Portafolio">
-                    </div>
-                    <div class="project-info">
-                        <h3>Portafolio Personal</h3>
-                        <p>Crearás tu propio sitio web profesional para mostrar tus habilidades y futuros proyectos.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Mini+Proyectos" alt="Mini Proyectos">
-                    </div>
-                    <div class="project-info">
-                        <h3>Mini Proyectos</h3>
-                        <p>Desarrollarás varios proyectos pequeños para dominar técnicas específicas de HTML y CSS.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Perfil de Egreso -->
-    <section class="graduation-profile">
-        <div class="container">
-            <h2 class="section-title">Perfil de Egreso</h2>
-            <div class="profile-content">
-                <div class="profile-image">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <div class="profile-text">
-                    <h3>Al finalizar el curso serás capaz de:</h3>
-                    <ul class="profile-list">
-                        <li><i class="fas fa-check-circle"></i> Crear sitios web completos usando HTML semántico y CSS</li>
-                        <li><i class="fas fa-check-circle"></i> Implementar diseños responsivos que se adapten a móviles y tablets</li>
-                        <li><i class="fas fa-check-circle"></i> Agregar animaciones y transiciones para mejorar la experiencia del usuario</li>
-                        <li><i class="fas fa-check-circle"></i> Publicar tus proyectos en internet usando servicios de hosting</li>
-                        <li><i class="fas fa-check-circle"></i> Utilizar las herramientas de desarrollo web modernas</li>
-                        <li><i class="fas fa-check-circle"></i> Comprender los principios básicos de SEO para posicionar tu sitio</li>
+                    <ul class="modulo-lista">
+                        <li><i class="fas fa-check"></i> Selectores y propiedades CSS</li>
+                        <li><i class="fas fa-check"></i> Modelo de caja y posicionamiento</li>
+                        <li><i class="fas fa-check"></i> Flexbox y Grid para layouts</li>
+                        <li><i class="fas fa-check"></i> Responsive design y media queries</li>
+                        <li><i class="fas fa-check"></i> Variables CSS y reutilización</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section id="testimonios" class="testimonials">
+    <!-- PROYECTOS: Galería de proyectos -->
+    <section id="proyectos" class="proyectos">
         <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros alumnos</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Nunca pensé que podría crear mi propia página web. Este curso me dio la confianza y habilidades para hacerlo. ¡Ahora tengo mi portafolio online!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://via.placeholder.com/50" alt="Ana García">
-                        </div>
-                        <div class="author-info">
-                            <h4>Ana García</h4>
-                            <p>Estudiante</p>
-                        </div>
+            <div class="encabezado-seccion">
+                <h2>Proyectos que crearás</h2>
+                <p>Aprende construyendo sitios web reales para tu portafolio</p>
+            </div>
+            
+            <div class="galeria-proyectos">
+                <div class="proyecto">
+                    <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=800&q=80" alt="Landing Page">
+                    <div class="proyecto-info">
+                        <h3>Landing Page</h3>
+                        <p>Aprende a crear páginas de aterrizaje efectivas con llamados a la acción.</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"La forma en que Eric explica los conceptos complejos hace que sean fáciles de entender. Lo recomiendo totalmente para principiantes."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://via.placeholder.com/50" alt="Juan Pérez">
-                        </div>
-                        <div class="author-info">
-                            <h4>Juan Pérez</h4>
-                            <p>Profesional en transición</p>
-                        </div>
+                
+                <div class="proyecto">
+                    <img src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?auto=format&fit=crop&w=800&q=80" alt="Portafolio">
+                    <div class="proyecto-info">
+                        <h3>Portafolio Personal</h3>
+                        <p>Diseña un portafolio profesional para mostrar tus habilidades.</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Este curso superó mis expectativas. No solo aprendí HTML y CSS, sino que ahora entiendo cómo funciona el desarrollo web en general."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://via.placeholder.com/50" alt="María Rodriguez">
-                        </div>
-                        <div class="author-info">
-                            <h4>María Rodriguez</h4>
-                            <p>Emprendedora</p>
-                        </div>
+                
+                <div class="proyecto">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80" alt="Blog">
+                    <div class="proyecto-info">
+                        <h3>Blog Responsive</h3>
+                        <p>Crea un blog adaptable a diferentes dispositivos.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Inscripción -->
-    <section id="inscripcion" class="enrollment">
+    <!-- PRECIOS: Planes de inscripción -->
+    <section id="precios" class="precios">
         <div class="container">
-            <h2 class="section-title">¡Inscríbete ahora!</h2>
-            <div class="enrollment-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
+            <div class="encabezado-seccion">
+                <h2>Planes de inscripción</h2>
+                <p>Elige el plan que mejor se adapte a tus necesidades</p>
+            </div>
+            
+            <div class="planes">
+                <div class="plan">
+                    <div class="plan-cabecera">
                         <h3>Plan Básico</h3>
-                        <p class="price">$99</p>
-                        <p class="price-period">pago único</p>
+                        <div class="precio">
+                            <span class="moneda">$</span>
+                            <span class="cantidad">49</span>
+                            <span class="periodo">/único pago</span>
+                        </div>
                     </div>
-                    <div class="pricing-features">
+                    <div class="plan-contenido">
                         <ul>
-                            <li><i class="fas fa-check"></i> Acceso al curso completo</li>
-                            <li><i class="fas fa-check"></i> Certificado de finalización</li>
-                            <li><i class="fas fa-check"></i> Acceso por 6 meses</li>
-                            <li class="not-included"><i class="fas fa-times"></i> Soporte personalizado</li>
-                            <li class="not-included"><i class="fas fa-times"></i> Proyectos adicionales</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a href="#" class="btn btn-secondary btn-block">Elegir Plan</a>
-                    </div>
-                </div>
-                <div class="pricing-card featured">
-                    <div class="pricing-tag">Más popular</div>
-                    <div class="pricing-header">
-                        <h3>Plan Completo</h3>
-                        <p class="price">$149</p>
-                        <p class="price-period">pago único</p>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Acceso al curso completo</li>
+                            <li><i class="fas fa-check"></i> Acceso completo al curso</li>
+                            <li><i class="fas fa-check"></i> Ejercicios prácticos</li>
                             <li><i class="fas fa-check"></i> Certificado de finalización</li>
                             <li><i class="fas fa-check"></i> Acceso de por vida</li>
-                            <li><i class="fas fa-check"></i> Soporte personalizado (3 meses)</li>
-                            <li><i class="fas fa-check"></i> 2 Proyectos adicionales</li>
+                            <li><i class="fas fa-times"></i> Soporte personalizado</li>
                         </ul>
                     </div>
-                    <div class="pricing-footer">
-                        <a href="#" class="btn btn-primary btn-block">Elegir Plan</a>
+                    <div class="plan-pie">
+                        <a href="#" class="boton boton-secundario">Seleccionar Plan</a>
                     </div>
                 </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
+                
+                <div class="plan plan-destacado">
+                    <div class="etiqueta-plan">Recomendado</div>
+                    <div class="plan-cabecera">
                         <h3>Plan Premium</h3>
-                        <p class="price">$249</p>
-                        <p class="price-period">pago único</p>
+                        <div class="precio">
+                            <span class="moneda">$</span>
+                            <span class="cantidad">99</span>
+                            <span class="periodo">/único pago</span>
+                        </div>
                     </div>
-                    <div class="pricing-features">
+                    <div class="plan-contenido">
                         <ul>
-                            <li><i class="fas fa-check"></i> Acceso al curso completo</li>
+                            <li><i class="fas fa-check"></i> Acceso completo al curso</li>
+                            <li><i class="fas fa-check"></i> Ejercicios prácticos</li>
                             <li><i class="fas fa-check"></i> Certificado de finalización</li>
                             <li><i class="fas fa-check"></i> Acceso de por vida</li>
                             <li><i class="fas fa-check"></i> Soporte personalizado (6 meses)</li>
-                            <li><i class="fas fa-check"></i> 5 Proyectos adicionales</li>
-                            <li><i class="fas fa-check"></i> Mentoría 1:1 (2 sesiones)</li>
                         </ul>
                     </div>
-                    <div class="pricing-footer">
-                        <a href="#" class="btn btn-secondary btn-block">Elegir Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="enrollment-guarantee">
-                <div class="guarantee-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <div class="guarantee-text">
-                    <p>Garantía de satisfacción de 7 días. Si no estás satisfecho con el curso, te devolvemos tu dinero.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Preguntas Frecuentes</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Necesito conocimientos previos?</h3>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No, el curso está diseñado para principiantes absolutos. No necesitas ninguna experiencia previa en programación o diseño web.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Qué software necesito?</h3>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Solo necesitas un navegador web moderno (como Chrome) y un editor de código como Visual Studio Code, que es gratuito. Te guiaremos en su instalación.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Por cuánto tiempo tendré acceso?</h3>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Dependiendo del plan elegido, tendrás acceso por 6 meses o de por vida al contenido del curso y sus actualizaciones.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Incluye soporte técnico?</h3>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sí, todos los planes incluyen acceso a nuestra comunidad donde podrás hacer preguntas. Los planes superiores incluyen soporte personalizado.</p>
+                    <div class="plan-pie">
+                        <a href="#" class="boton boton-primario">Seleccionar Plan</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>¿Listo para aprender HTML y CSS?</h2>
-                <p>Da el primer paso hacia tu carrera en el desarrollo web</p>
-                <a href="#inscripcion" class="btn btn-primary">¡Comienza Ahora!</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- FOOTER: Pie de página -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>Eric Martínez</h3>
-                    <p>Enseñando desarrollo web a principiantes desde 2015. Más de 10,000 estudiantes satisfechos.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <div class="footer-contenido">
+                <!-- Información de la marca -->
+                <div class="footer-marca">
+                    <a href="#" class="logo">HTML & CSS <span>Academy</span></a>
+                    <p>Formando la próxima generación de desarrolladores web desde 2023.</p>
+                    <!-- Redes sociales -->
+                    <div class="redes-sociales">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-nav">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#acerca">Acerca del Curso</a></li>
-                        <li><a href="#contenido">Contenido</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#testimonios">Testimonios</a></li>
-                        <li><a href="#inscripcion">Inscripción</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contacto</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@ericmartinez.com">info@ericmartinez.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                    </ul>
+                
+                <!-- Enlaces útiles -->
+                <div class="footer-enlaces">
+                    <div class="grupo-enlaces">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#acerca">Acerca del Curso</a></li>
+                            <li><a href="#contenido">Contenido</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grupo-enlaces">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Eric Martínez. Todos los derechos reservados.</p>
+            
+            <div class="footer-inferior">
+                <p>&copy; 2025 HTML & CSS Academy. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Script para menú móvil y FAQ -->
-    <script>
-        // Menú móvil
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            menuToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                menuToggle.classList.toggle('active');
-            });
-
-            // Cerrar menú al hacer clic en un enlace
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                });
-            });
-
-            // FAQ acordeón
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function() {
-                    const faqItem = this.parentNode;
-                    faqItem.classList.toggle('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html>
