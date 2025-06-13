@@ -3,13 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>De Cero a Desarrollador Web en 4 Semanas | Curso de HTML y CSS</title>
+    <title>Aprende HTML y CSS desde Cero | Curso Completo</t            </div>
           </div>
         </div>
         
-
+        <!-- Banner próxima fecha -->
+        <div class="proximo-curso">
+          <div class="banner-fecha">
+            <div class="fecha-icono">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="fecha-info">
+              <h4>¡Próxima fecha de inicio: 1 de Julio, 2025!</h4>
+              <p>Quedan solo <span class="plazas-destacadas">8 plazas disponibles</span> de 20 para la próxima cohorte</p>
+            </div>
+          </div>
+        </div>
         
- <link rel="stylesheet" href="css/style.css" />
+        <!-- CTA adicional -->
+        <div class="seccion-cta">
+          <h3>¡No esperes más para iniciar tu carrera como desarrollador web!</h3>
+          <a href="#precios" class="boton boton-primario">¡RESERVA TU LUGAR AHORA!</a>
+        </div> <link rel="stylesheet" href="css/style.css" />
     <!-- Fuente Inter de Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -59,16 +74,15 @@
     <!-- End Meta Pixel Code -->
   </head>
   <body>
-
-    
-    <!-- CABECERA: Contiene el logo y menú de navegación -->
-    <header class="header">
-          <!-- Banner de oferta limitada -->
+    <!-- Banner de oferta limitada -->
     <div class="banner-oferta">
       <div class="container">
         <p><i class="fas fa-bolt"></i> <strong>OFERTA ESPECIAL:</strong> 30% de descuento por tiempo limitado - <a href="#precios">¡Inscríbete hoy!</a></p>
       </div>
     </div>
+    
+    <!-- CABECERA: Contiene el logo y menú de navegación -->
+    <header class="header">
       <div class="container">
         <!-- Navegación principal -->
         <nav class="navbar">
@@ -235,141 +249,151 @@
         <!-- Módulos del curso -->
         <div class="modulos">
           <div class="modulo">
-            <div class="modulo-cabecera">
-              <span class="etiqueta">Semana 1</span>
-              <h3>Fundamentos de HTML + herramientas</h3>
-            </div>
-            <ul class="modulo-lista">
-              <li>
-                <i class="fas fa-check"></i> Qué es HTML, CSS, navegador, DOM
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Instalación de VS Code + Live
-                Server
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Estructura base de un documento
-                HTML + archivo CSS externo
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Etiquetas: header, main, section,
-                article, footer, etc.
-              </li>
-              <li><i class="fas fa-check"></i> Organización del contenido</li>
-              <li><i class="fas fa-check"></i> Primer boceto de la landing</li>
-              <li>
-                <i class="fas fa-check"></i> Selectores básicos (elemento,
-                .clase, #id)
-              </li>
-              <li>
-                <i class="fas fa-check"></i>Propiedades comunes: color, texto,
-                fondo, padding, margin
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Sintaxis correcta y buenas
-                prácticas
-              </li>
-            </ul>
+            <details class="modulo-collapsible">
+              <summary class="modulo-cabecera">
+                <span class="etiqueta">Semana 1</span>
+                <h3>Fundamentos de HTML + herramientas</h3>
+                <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+              </summary>
+              <ul class="modulo-lista">
+                <li>
+                  <i class="fas fa-check"></i> Qué es HTML, CSS, navegador, DOM
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Instalación de VS Code + Live
+                  Server
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Estructura base de un documento
+                  HTML + archivo CSS externo
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Etiquetas: header, main, section,
+                  article, footer, etc.
+                </li>
+                <li><i class="fas fa-check"></i> Organización del contenido</li>
+                <li><i class="fas fa-check"></i> Primer boceto de la landing</li>
+                <li>
+                  <i class="fas fa-check"></i> Selectores básicos (elemento,
+                  .clase, #id)
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>Propiedades comunes: color, texto,
+                  fondo, padding, margin
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Sintaxis correcta y buenas
+                  prácticas
+                </li>
+              </ul>
+            </details>
           </div>
 
           <div class="modulo">
-            <div class="modulo-cabecera">
-              <span class="etiqueta">Semana 2</span>
-              <h3>Maquetación + estilos básicos</h3>
-            </div>
-            <ul class="modulo-lista">
-              <li>
-                <i class="fas fa-check"></i> Maquetado completo de la landing en
-                HTML
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Imágenes, íconos, contenido de
-                ejemplo
-              </li>
-              <li><i class="fas fa-check"></i> Google Fonts</li>
-              <li>
-                <i class="fas fa-check"></i> Colores, fondo, jerarquía visual
-              </li>
-              <li><i class="fas fa-check"></i> Diseño minimalista y moderno</li>
-              <li>
-                <i class="fas fa-check"></i> Estilizar nav, enlaces, botones
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Efectos hover y transición básica
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Estilizar secciones con contraste
-                visual
-              </li>
-            </ul>
+            <details class="modulo-collapsible">
+              <summary class="modulo-cabecera">
+                <span class="etiqueta">Semana 2</span>
+                <h3>Maquetación + estilos básicos</h3>
+                <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+              </summary>
+              <ul class="modulo-lista">
+                <li>
+                  <i class="fas fa-check"></i> Maquetado completo de la landing en
+                  HTML
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Imágenes, íconos, contenido de
+                  ejemplo
+                </li>
+                <li><i class="fas fa-check"></i> Google Fonts</li>
+                <li>
+                  <i class="fas fa-check"></i> Colores, fondo, jerarquía visual
+                </li>
+                <li><i class="fas fa-check"></i> Diseño minimalista y moderno</li>
+                <li>
+                  <i class="fas fa-check"></i> Estilizar nav, enlaces, botones
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Efectos hover y transición básica
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Estilizar secciones con contraste
+                  visual
+                </li>
+              </ul>
+            </details>
           </div>
 
           <div class="modulo">
-            <div class="modulo-cabecera">
-              <span class="etiqueta">Semana 3</span>
-              <h3>Layout y responsividad</h3>
-            </div>
-            <ul class="modulo-lista">
-              <li>
-                <i class="fas fa-check"></i> Introducción a Flexbox (contenedor,
-                eje principal/cruzado)
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Layout de la landing con Flexbox
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Viewport, unidades relativas (%,
-                rem, vw)
-              </li>
-              <li><i class="fas fa-check"></i> Media queries</li>
-              <li><i class="fas fa-check"></i> Adaptar la landing a móvil</li>
-              <li>
-                <i class="fas fa-check"></i> Aplicar todo lo aprendido: estilos
-                finales
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Detalles visuales y correcciones
-              </li>
-            </ul>
+            <details class="modulo-collapsible">
+              <summary class="modulo-cabecera">
+                <span class="etiqueta">Semana 3</span>
+                <h3>Layout y responsividad</h3>
+                <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+              </summary>
+              <ul class="modulo-lista">
+                <li>
+                  <i class="fas fa-check"></i> Introducción a Flexbox (contenedor,
+                  eje principal/cruzado)
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Layout de la landing con Flexbox
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Viewport, unidades relativas (%,
+                  rem, vw)
+                </li>
+                <li><i class="fas fa-check"></i> Media queries</li>
+                <li><i class="fas fa-check"></i> Adaptar la landing a móvil</li>
+                <li>
+                  <i class="fas fa-check"></i> Aplicar todo lo aprendido: estilos
+                  finales
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Detalles visuales y correcciones
+                </li>
+              </ul>
+            </details>
           </div>
 
           <div class="modulo">
-            <div class="modulo-cabecera">
-              <span class="etiqueta">Semana 4</span>
-              <h3>Herramientas, repaso y proyecto final</h3>
-            </div>
-            <ul class="modulo-lista">
-              <li><i class="fas fa-check"></i> git init, add, commit, push</li>
-              <li>
-                <i class="fas fa-check"></i> Crear repositorio, subir el
-                proyecto
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Enviar tareas y portafolio por
-                GitHub
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Revisión de estructura, estilos y
-                responsividad
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Buenas prácticas y organización del
-                código
-              </li>
-              <li><i class="fas fa-check"></i> Preparar el proyecto final</li>
-              <li>
-                <i class="fas fa-check"></i>Cada alumno muestra su landing
-              </li>
-              <li><i class="fas fa-check"></i> Feedback en vivo</li>
-              <li>
-                <i class="fas fa-check"></i> Orientación para seguir aprendiendo
-                (HTML avanzado, JavaScript, etc.)
-              </li>
-            </ul>
+            <details class="modulo-collapsible">
+              <summary class="modulo-cabecera">
+                <span class="etiqueta">Semana 4</span>
+                <h3>Herramientas, repaso y proyecto final</h3>
+                <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+              </summary>
+              <ul class="modulo-lista">
+                <li><i class="fas fa-check"></i> git init, add, commit, push</li>
+                <li>
+                  <i class="fas fa-check"></i> Crear repositorio, subir el
+                  proyecto
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Enviar tareas y portafolio por
+                  GitHub
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Revisión de estructura, estilos y
+                  responsividad
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Buenas prácticas y organización del
+                  código
+                </li>
+                <li><i class="fas fa-check"></i> Preparar el proyecto final</li>
+                <li>
+                  <i class="fas fa-check"></i>Cada alumno muestra su landing
+                </li>
+                <li><i class="fas fa-check"></i> Feedback en vivo</li>
+                <li>
+                  <i class="fas fa-check"></i> Orientación para seguir aprendiendo
+                  (HTML avanzado, JavaScript, etc.)
+                </li>
+              </ul>
+            </details>
           </div>
         </div>
-      </div>
-    </section>
         
         <!-- CTA adicional -->
         <div class="seccion-cta">
@@ -489,7 +513,18 @@
             </p>
           </div>
         </div>
-                
+        
+        <!-- Logos de empresas donde trabajan los egresados -->
+        <div class="confianza">
+          <h4>Nuestros estudiantes trabajan en:</h4>
+          <div class="logos-empresas">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png" alt="Google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/180px-Apple_logo_black.svg.png" alt="Apple">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/320px-Microsoft_logo.svg.png" alt="Microsoft">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png" alt="Amazon">
+          </div>
+        </div>
+        
         <!-- CTA adicional -->
         <div class="seccion-cta">
           <h3>¡Tú también puedes conseguirlo!</h3>
@@ -500,17 +535,13 @@
         <div class="lead-capture">
           <div class="lead-content">
             <h3>¿No estás listo para inscribirte?</h3>
-            <p>Contáctanos y con gusto te proporcionaremos más información.</p>
+            <p>Recibe una clase gratuita y material exclusivo en tu correo</p>
           </div>
-          <a
-            href="https://wa.me/5218335355863"
-            class="boton boton-primario"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Contáctanos por WhatsApp"
-            >Contáctanos por WhatsApp</a
-          >
-          <p class="form-disclaimer">Nunca compartiremos tus datos. Puedes darte de baja cuando quieras.</p>
+          <form class="lead-form" id="lead-form">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="boton">Recibir Material</button>
+          </form>
+          <p class="form-disclaimer">Nunca compartiremos tu correo. Puedes darte de baja cuando quieras.</p>
         </div>
       </div>
     </section>
@@ -523,6 +554,16 @@
           <p>Elige el plan que mejor se adapte a tus necesidades</p>
         </div>
 
+        <!-- Garantía de satisfacción -->
+        <div class="garantia">
+          <div class="garantia-icono">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="garantia-texto">
+            <h4>Garantía de satisfacción 100%</h4>
+            <p>Si no estás satisfecho con el curso después de la primera semana, te devolvemos el 100% de tu dinero sin preguntas.</p>
+          </div>
+        </div>
         
         <div class="planes">
           <div class="plan">
@@ -570,6 +611,25 @@
                 <span class="moneda">MXN$</span>
                 <span class="cantidad">2.990</span>
                 <span class="periodo">/único pago</span>
+              </div>
+              <div class="contador-oferta">
+                <p>¡Oferta termina en:</p>
+                <div class="temporizador">
+                  <div class="tiempo">
+                    <span class="numero" id="dias">03</span>
+                    <span class="texto">Días</span>
+                  </div>
+                  <div class="divisor">:</div>
+                  <div class="tiempo">
+                    <span class="numero" id="horas">12</span>
+                    <span class="texto">Hrs</span>
+                  </div>
+                  <div class="divisor">:</div>
+                  <div class="tiempo">
+                    <span class="numero" id="minutos">40</span>
+                    <span class="texto">Min</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="plan-contenido">
@@ -659,5 +719,46 @@
       <i class="fab fa-whatsapp"></i>
     </a>
     
+    <!-- Script para el contador de oferta -->
+    <script>
+      // Función para actualizar el contador
+      function actualizarContador() {
+        // Fecha objetivo (3 días a partir de ahora)
+        const fechaActual = new Date();
+        const fechaObjetivo = new Date(fechaActual);
+        fechaObjetivo.setDate(fechaObjetivo.getDate() + 3);
+        
+        // Calcular el tiempo restante
+        const tiempoRestante = fechaObjetivo - fechaActual;
+        
+        // Calcular días, horas, minutos
+        const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        
+        // Actualizar el DOM
+        document.getElementById('dias').textContent = dias.toString().padStart(2, '0');
+        document.getElementById('horas').textContent = horas.toString().padStart(2, '0');
+        document.getElementById('minutos').textContent = minutos.toString().padStart(2, '0');
+      }
+      
+      // Actualizar inmediatamente y luego cada minuto
+      actualizarContador();
+      setInterval(actualizarContador, 60000);
+      
+      // Manejo del formulario de leads
+      document.getElementById('lead-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        // Aquí normalmente enviarías el email a tu servicio de email marketing
+        console.log('Lead capturado:', email);
+        
+        // Feedback al usuario
+        this.innerHTML = '<p class="success-message">¡Gracias! Te hemos enviado el material a tu correo.</p>';
+        
+        // Aquí se puede conectar con servicios como Mailchimp, ActiveCampaign, etc.
+      });
+    </script>
   </body>
 </html>
