@@ -726,6 +726,50 @@ button {
   font-size: 0.9rem;
 }
 
+/* Widget de WhatsApp */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-widget i {
+  font-size: 35px;
+}
+
+.whatsapp-widget:hover {
+  transform: scale(1.1);
+  background-color: #128c7e;
+}
+
+/* Animación de pulso para llamar la atención */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-widget {
+  animation: pulse 2s infinite;
+}
+
 /* Media Queries para Responsive */
 @media screen and (max-width: 992px) {
   .hero .container {
